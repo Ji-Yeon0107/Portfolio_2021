@@ -1,51 +1,57 @@
 
 * { margin:0; padding:0; box-sizing:border-box; }
-html, body { height:100% }
+html, body { 
+    height:100%; color:rgb(59, 59, 59);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200;
+}
 li { list-style: none; }
 a { text-decoration:none; color:inherit; }
-/* 최소너비 1024px */
-/* 최대너비 1600px */
-
+span { 
+    margin-left: 5px; 
+    margin-right: 5px;
+}
+.font-color {
+    color:rgb(0, 140, 255);
+}
 .container {
     min-width:1024px;
-    max-width:1600px;
     margin:auto;
 }
-.project, .skills, .footer {
-    margin-top: 110px;
-    border-bottom:1px dashed #eee;
+ .project, .skills, .footer {
+    margin-top: 80px;
+    border-bottom:1px dashed #ddd;
 }
 .footer {
     background:#eee;
+   text-align:center;
+   padding-top:40px;
 }
-
 .txtsize-middle {
     font-size:20px;
     margin-top:10px;
 }
 .title {
     height:70px;
-    /* background:#eee; */
+    background:rgb(246, 246, 246);
 }
-
 .profile {
     width:100%; height:400px;
     padding-top:50px;
-    padding-left:280px;
-    background:rgb(189, 226, 255);
+    border-bottom:1px dashed #ddd;
+    background-color:rgb(209, 209, 209);
 }
 .profile .profile-text-box {
-    border:1px solid black;
+    margin:auto;
+    border:1px solid rgb(221, 221, 221);
     width:500px;
     padding:50px;
-    box-shadow:1px 1px 1px 1px rgba(0,0,0,0.5)
+    box-shadow:1px 1px 1px 0px rgba(59, 59, 59, 0.5)
 }
 .profile .profile-text-box p:last-child{
     margin-top:15px;
 }
-.project {
-    height: 400px;
-}
+
 .footer {
     height:150px;
 }
@@ -58,14 +64,45 @@ a { text-decoration:none; color:inherit; }
 .project-list{
     width:60%; max-width:1300px;
     margin-left:20%;
-    display:grid; grid-template-columns:1fr 2fr;
+    margin-bottom:70px;
+    display:grid; grid-template-columns:2fr 1fr;
 }
-.project-list .project-img{
-    border:1px solid green;
-}
-.project-list .project-desc{
-    border:1px solid blue;
 
+.project-list .project-img{
+    width:600px;
+    border:1px dashed #ccc;
+    height:340px;
+    margin:20px;
+}
+
+.project-list a .project-img {
+    overflow:hidden;
+}
+.project-list .project-img img {
+    width:100%;
+}
+
+
+.project-list .project-desc{
+    border:1px solid gray;
+    min-width:350px;
+    height:340px;
+    margin:20px;
+}
+.project-list .project-desc h2{
+    margin-top:100px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.project-list .project-desc>div {
+    text-align:center;
+}
+
+.project-list .project-desc div p {
+    margin-top:25px;
+}
+.project-list .project-desc div p span:hover {
+    font-weight:bold;
 }
 .skills {
     width:100%;
@@ -102,13 +139,4 @@ a { text-decoration:none; color:inherit; }
     text-align:center;
     padding:2.5px;
     height:47px;
-}
-
-@media screen and (max-width:1299px) {
-    .project { height: 900px; }       
-    .project ul {
-        grid-template-columns:500px;
-        row-gap:100px;
-        justify-content:space-around;
-    }
 }
