@@ -18,18 +18,19 @@ span {
     min-width:1024px;
     margin:auto;
 }
+.footer {
+    background:#eee;
+    text-align:center;
+    padding-top:40px;
+}
  .project, .skills, .footer {
     margin-top: 80px;
     border-bottom:1px dashed #ddd;
 }
-.footer {
-    background:#eee;
-   text-align:center;
-   padding-top:40px;
-}
+
 .txtsize-middle {
     font-size:20px;
-    margin-top:10px;
+    margin-top:1px;
 }
 .title {
     height:70px;
@@ -48,6 +49,13 @@ span {
     padding:50px;
     box-shadow:1px 1px 1px 0px rgba(0, 0, 0, 0.5)
 }
+.profile .profile-text-box h1 {
+    height:43px; line-height:43px;
+    border-left:3px solid rgb(238, 204, 204);
+    text-indent:10px;
+    margin-bottom:30px;
+}
+
 .profile .profile-text-box p:last-child{
     margin-top:15px;
 }
@@ -58,9 +66,23 @@ span {
 .title h1, .skills h1, .project h1 {
     width:fit-content;
     height:50px;
-    padding:25px;
-    
+    padding:20px;
 }
+.project h1:after, .skills h1:after {
+    content:'';display:block;
+    width:35%; height:5px;
+    transform:translateX(100%);
+    border-bottom:4px solid rgb(175, 104, 104);
+    position:relative;
+}
+.title h1:after {
+    content:'';display:block;
+    width:35%; height:1px;
+    /* transform:translateX(100%); */
+    border-bottom:4px solid rgb(175, 104, 104);
+    position:relative;
+}
+
 .project-list{
     width:60%; max-width:1300px;
     margin-left:20%;
