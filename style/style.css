@@ -15,10 +15,11 @@ span {
     color:rgb(0, 140, 255);
 }
 .container {
-    min-width:1024px;
+     width:100%; min-width:1400px;
     margin:auto;
 }
 .footer {
+    width:100%; min-width:1400px;
     background:#eee;
     text-align:center;
     padding-top:40px;
