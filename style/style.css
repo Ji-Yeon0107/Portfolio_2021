@@ -108,9 +108,9 @@ span {
 .project-list .project-img img {
     width:100%
 }
-.project-list:nth-child(4) .project-img img {
+/* .project-list:nth-child(4) .project-img img {
     width:80%;   
-}
+} */
 
 
 .project-list .project-desc{
